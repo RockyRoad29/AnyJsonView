@@ -6,4 +6,4 @@ A prototype will soon be published here.
 
 Thanks for your patience.
 
-Feel free to post about aby specific needs or use cases.
+Feel free to post about any specific needs or use cases.
