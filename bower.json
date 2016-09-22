@@ -1,0 +1,20 @@
+{
+  "name": "simple",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Michelle Baert <rocky.road@rocky-shore.net>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

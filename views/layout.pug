@@ -1,15 +1,45 @@
-html
+//- derived from official Bootstrap 101 Template
+doctype html
+html(lang='en')
   head
-    title DH-API - #{title}
+    block head
+    meta(charset='utf-8')
+
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //- The above 3 meta tags *must* come first in the head
+
+    title site.title
+
+    block head_bootstrap
+      link(href='/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+      //- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+      //- WARNING: Respond.js doesn't work if you view the page via file://
+      //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+
+    //- site configuration
+    block head_scripts
     block styles
       link(rel="stylesheet", href="css/main.css")
 
-    block scripts
+
   body
     #header
       block header
-        h1 [dev] #{title}
+        h1 [dev] #{site.title}
     #content
       block content
     #footer
       block footer
+        p.copyright
+          | Copyright (c) author.name, all rights reserved.
+    block foot_js
+      block foot_bootstrap
+        //- jQuery (necessary for Bootstrap's JavaScript plugins)
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+        //- Include all compiled plugins (below), or include individual files as needed
+        script(src='/bootstrap/dist/js/bootstrap.min.js')
