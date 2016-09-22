@@ -1,0 +1,15 @@
+html
+  head
+    title DH-API - #{title}
+    block styles
+      link(rel="stylesheet", href="css/main.css")
+
+    block scripts
+  body
+    #header
+      block header
+        h1 [dev] #{title}
+    #content
+      block content
+    #footer
+      block footer
